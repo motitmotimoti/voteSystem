@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>投票システム</title>
+  </head>
+  <body>
+    <?php
+                       
+       $pdo = new PDO ('mysql:host=localhost;dbname=vote_sample;charset=utf8','media','mediauser');
+       $sql = $pdo -> prepare('insert into graphic values($_POST[vote_date],?,?,?)');
+    $err = array();
+
+ function h($str){
+    return htmlspecialchars($str);
+    }
+    
+  
+    if($_REQUEST['first'] == $_REQUEST['second'] || $_REQUEST['first'] == $_REQUEST['third'] || $_REQUEST['second'] == $_REQUEST['third']){
+    $err['gp_all'] = '１人に重複して投票できません。';
+    }
+
+    if(count($err) >= 1){
+    if(isset($err['gp1'])){
+    echo $err['gp1'].'</br>';
+    }
+    if(isset($err['gp2'])){
+    echo $err['gp2'].'</br>';
+    }
+     if(isset($err['gp3'])){
+    echo $err['gp3'].'</br>';
+    }
+    if(isset($err['gp_all'])){
+    echo $err['gp_all'].'</br>';
+    }
+    }else
+    if ($sql -> execute(
+    [h($_POST['first']),h($_POST['second']),h($_POST['third'])]
+    ))
+    {
+    echo '更新しました。';
+    }else{
+    echo '更新に失敗しました。';
+    }
+    ?>
+     <p>
+      <button onclick="history.back()">戻る</button>
+      <button onclick="location.href='serch-output.php'">一覧に戻る</button>
+    </p>
+  </body>
+</html>

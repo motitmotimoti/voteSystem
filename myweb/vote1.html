@@ -1,0 +1,82 @@
+<!Doctype HTML>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>投票システム　デザインコンテスト　プロトタイプ</title>
+<script type="text/javascript" src="./vote1.js"></script>
+
+<style>
+li {
+	height: 25px;
+	line-height: 25px;
+	width: 120px;
+
+	margin-bottom: 10px;
+	text-align: center;
+
+	border-radius: 5px 20px;
+
+}
+#p_all_member > li {
+	background-color: yellowgreen;
+}
+#p_ranking > li {
+	background-color: darkgreen;
+}
+#f_all_member > li {
+	background-color: yellowgreen;
+}
+#f_ranking > li {
+	background-color: darkgreen;
+}
+
+#select-container{
+display:flex;
+}
+
+</style>
+
+
+</head>
+<body>
+  <div id="select-container">
+    <div>
+      <h3>プレゼンター</h3>
+      <ol id="p_all_member">
+	<li class="p_item" id="p_1" draggable="true">Member 1</li>
+	<li class="p_item" id="p_2" draggable="true">Member 2</li>
+	<li class="p_item" id="p_3" draggable="true">Member 3</li>
+	<li class="p_item" id="p_4" draggable="true">Member 4</li>
+      </ol>
+      
+      <p style="margin: 30px 50px;">↓↓↓↓↓↓</p>
+      
+      <ol id="p_ranking">
+	<li class="p_slot" id="p_rank1"></li>
+	<li class="p_slot" id="p_rank2"></li>
+	<li class="p_slot" id="p_rank3"></li>
+      </ol>
+    </div>
+    
+    <div>
+      <h3>ファシリテーター</h3>
+      <ol id="f_all_member">
+	<li class="f_item" id="f_1" draggable="true">Member 1</li>
+	<li class="f_item" id="f_2" draggable="true">Member 2</li>
+	<li class="f_item" id="f_3" draggable="true">Member 3</li>
+	<li class="f_item" id="f_4" draggable="true">Member 4</li>
+      </ol>
+      
+      <p style="margin: 30px 50px;">↓↓↓↓↓↓</p>
+      
+      <ol id="f_ranking">
+	<li class="f_slot" id="f_rank1"></li>
+	<li class="f_slot" id="f_rank2"></li>
+	<li class="f_slot" id="f_rank3"></li>
+      </ol>
+    </div>
+    </div>
+
+</body>
+</html>

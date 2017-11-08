@@ -1,0 +1,26 @@
+#select-container{
+  display: flex;
+}
+#select-container>div{
+  width: 36em;
+}
+#select-container
+.exchange{
+  position: relative;
+  top: 1em;
+}
+.ranking-list>li{
+  font-size: large;
+}
+.ranking-list>li>select{
+  font-size: large;
+}
+#result-container{
+  display: none;
+}
+#result-img-container{
+  display: flex;
+}
+#result-img-container>div{
+  width: 36em;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>投票コンペ</title>
+    <link type="text/css" rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="./script.js"></script>
+  </head>
+  <body>
+    <div id="select-container">
+      <div>
+        <h3>プレゼンター</h3>
+        <ol class="ranking-list">
+          <li>
+            <select data-category="presenter" class="name-select">
+              <option value="null">---</option>
+              <option value="ghita">1.Ghita</option>
+              <option value="watanabe">2.渡辺</option>
+              <option value="araki">3.荒木</option>
+              <option value="aritake">4.有竹</option>
+              <option value="yoshida">5.吉田</option>
+            </select>
+            <input data-category="presenter" class="exchange" type="button" value="↑↓">
+          </li>
+          <li>
+            <select data-category="presenter" class="name-select">
+              <option value="null">---</option>
+              <option value="ghita">1.Ghita</option>
+              <option value="watanabe">2.渡辺</option>
+              <option value="araki">3.荒木</option>
+              <option value="aritake">4.有竹</option>
+              <option value="yoshida">5.吉田</option>
+            </select>
+            <input data-category="presenter" class="exchange" type="button" value="↑↓">
+          </li>
+          <li>
+            <select data-category="presenter" class="name-select">
+              <option value="null">---</option>
+              <option value="ghita">1.Ghita</option>
+              <option value="watanabe">2.渡辺</option>
+              <option value="araki">3.荒木</option>
+              <option value="aritake">4.有竹</option>
+              <option value="yoshida">5.吉田</option>
+            </select>
+          </li>
+        </ol>
+        <div>評価ポイント</div>
+        <ul>
+          <li>制限時間が守られていたか（過ぎた後，発表を続けていないか）</li>
+          <li>意見・質問に対して，根拠ある返答がはっきりとなされていたか</li>
+          <li>発表内容に対して興味深いと思える点が1つでもあったか</li>
+          <li>発表者の態度を心がけていたか（例．貧乏ゆすり・うつむき・表情）</li>
+          <li>声が大きく，抑揚がついていたか</li>
+          <li>話にリズム・キレ・ストーリー性があったか</li>
+        </ul>
+      </div>
+      <div>
+        <h3>ファシリテーター</h3>
+        <ol class="ranking-list">
+          <li>
+            <select data-category="facilitator" class="name-select">
+              <option value="null">---</option>
+              <option value="morita">1.森田</option>
+              <option value="shibasawa">2.柴沢</option>
+              <option value="koyama">3.小山</option>
+              <option value="mochida">4.持田</option>
+            </select>
+            <input data-category="facilitator" class="exchange" type="button" value="↑↓">
+          </li>
+          <li>
+            <select data-category="facilitator" class="name-select">
+              <option value="null">---</option>
+              <option value="morita">1.森田</option>
+              <option value="shibasawa">2.柴沢</option>
+              <option value="koyama">3.小山</option>
+              <option value="mochida">4.持田</option>
+            </select>
+            <input data-category="facilitator" class="exchange" type="button" value="↑↓">
+          </li>
+          <li>
+            <select data-category="facilitator" class="name-select">
+              <option value="null">---</option>
+              <option value="morita">1.森田</option>
+              <option value="shibasawa">2.柴沢</option>
+              <option value="koyama">3.小山</option>
+              <option value="mochida">4.持田</option>
+            </select>
+          </li>
+        </ol>
+        <div>評価ポイント</div>
+        <ul>
+          <li>意見（「発表」を含む）の整理ができていたか（例．発言の補足のための深掘り・見やすいグラフィック（色，字，文，絵）・意見の書き出し）</li>
+          <li>場に対して，討論が発生するような問題（議題）提起ができていたか</li>
+          <li>討論の切れ目が見極められていたか</li>
+          <li>（グラフィックにおいて，フレームワークが活用できていたか）</li>
+        </ul>
+      </div>
+    </div>
+    <input id="vote" type="button" value="投票">
+    <div id="result-container">
+      <h3>結果</h3>
+      <div id="result-img-container">
+        <div>
+          <div>プレゼンター</div>
+          <img id="presenter-result" src="javascript:void(0);">
+        </div>
+        <div>
+          <div>ファシリテータ</div>
+          <img id="facilitator-result" src="javascript:void(0);">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

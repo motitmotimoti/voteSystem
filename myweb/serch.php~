@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title>投票システム</title>
+  </head>
+  <body>
+    過去の投票を検索します。<br><br>
+    <form action="serch-output.php" method="post">
+      投票番号：<input type="text" size="4" name="num"><br>
+      投票日　：<input type="text" size="8" name="kw">(<font color='red'>yyyymmdd</font>の形で記入してください)<br>
+      <input type="submit" value="検索">
+    </form>
+  </body>
+</html>

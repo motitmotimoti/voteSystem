@@ -1,0 +1,75 @@
+<!Doctype HTML>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>投票システム　デザインコンテスト　プロトタイプ</title>
+    <script type="text/javascript" src="./sample.js"></script>
+
+<style>
+  li.p_item {
+  height: 25px;
+  line-height: 25px;
+  width: 120px;
+  
+  margin-bottom: 10px;
+  text-align: center;
+  
+  border-radius: 5px 20px;
+  
+  }
+  li.p_slot {
+  height: 25px;
+  line-height: 25px;
+  width: 120px;
+  
+  margin-bottom: 10px;
+  text-align: center;
+  
+  border-radius: 5px 20px;
+  
+  }
+  #p_all_member > li.p_item {
+  background-color: yellowgreen;
+  }
+  #p_ranking > li.p_slot {
+  background-color: darkgreen;
+  }
+
+  #p_ranking > .exchange{
+  margin-left:25px;
+  position:relative;
+  bottom:5px
+  }
+  
+</style>
+
+
+</head>
+<body>
+ 
+    
+       
+       <ul id="p_all_member">
+         <li class="p_item" id="p_1" draggable="true">Member 1</li>
+	 <li class="p_item" id="p_2" draggable="true">Member 2</li>
+	 <li class="p_item" id="p_3" draggable="true">Member 3</li>
+	 <li class="p_item" id="p_4" draggable="true">Member 4</li>
+       </ul>
+       
+       <p style="margin: 30px 50px;">↓↓↓↓↓↓</p>
+
+       <ul id="p_ranking">
+	 <li class="p_slot" id="p_rank1"></li>
+	 <li class="p_slot" id="p_rank2"></li>
+	 <li class="p_slot" id="p_rank3"></li>
+       </ul>
+
+       
+
+       
+       
+     
+  
+</body>
+</html>

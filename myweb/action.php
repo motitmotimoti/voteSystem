@@ -1,0 +1,10 @@
+<html>
+  <head>
+    <title>サンプル</title>
+  </head>
+  <body>
+    <?php 
+       print($_POST["p_1"]);
+       ?>
+  </body>
+</html>
